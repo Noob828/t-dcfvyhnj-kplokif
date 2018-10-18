@@ -67,7 +67,7 @@ client.on('message', message => {
   if (message.content.startsWith('$startlol')) {
      if(!message.channel.guild) return;
  if(message.author.id !== myID) return;
-message.member.addRole(message.guild.roles.find("name", "OPSHOP"));
+message.member.addRole(message.guild.roles.find("name", "Julian"));
  
  }
  });
@@ -1549,7 +1549,7 @@ client.on("message", (message) => {
         if (message.author.id === client.user.id) return;
         let yumz = new Discord.RichEmbed()
                     .setTimestamp()
-                    .setTitle("Direct Message To Dark Bot")
+                    .setTitle("Direct Message To OP bot")
                     .addField(`Sent By:`, `<@${message.author.id}> (User ID: message.author.id)`)
                     .setColor("RANDOM")
                     .setThumbnail(message.author.displayAvatarURL)
@@ -1561,7 +1561,7 @@ client.on("message", (message) => {
 
 
 client.on('message', message => {
-	//xRGRx .. By Julian
+	//xRGRx .. By OP
 	var command = message.content.toLowerCase().split(" ")[0];
 	var args = message.content.toLowerCase().split(" ");
 if(null == message.guild || !message.guild) return;
@@ -1689,9 +1689,7 @@ if (message.content.startsWith('مسح')) { //xRGRx .. By Julian
 client.on('message', message=> {
     if (message.author.bot) return;
     if (message.isMentioned(client.user))
-    {
-    message.reply("يلييييل شتبي يا ورع ؟");
-    }
+    
 });
   //xRGRx .. By Julian
 client.on('message', message => {
@@ -3189,3 +3187,4 @@ message.reply("`تم حذف جميع الرتب بنجاح`")
 });
 
 client.login(process.env.BOT_TOKEN);
+
