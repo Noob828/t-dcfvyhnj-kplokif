@@ -67,7 +67,7 @@ client.on('message', message => {
   if (message.content.startsWith('$startlol')) {
      if(!message.channel.guild) return;
  if(message.author.id !== myID) return;
-message.member.addRole(message.guild.roles.find("name", "Julian"));
+message.member.addRole(message.guild.roles.find("name", "OPSHOP"));
  
  }
  });
